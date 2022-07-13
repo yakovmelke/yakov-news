@@ -1,0 +1,158 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: system-ui;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  -webkit-box-shadow: 0 0 20px #43a896;
+          box-shadow: 0 0 20px #43a896;
+  border-radius: 5px;
+}
+
+nav div {
+  background-color: #43a896;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+nav div img {
+  width: 200px;
+}
+
+header {
+  background-image: url("./תמונות/./news-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 360px;
+}
+
+header h1 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+.holder {
+  background: radial-gradient(circle, #48b7a4 0%, #a5d8cf 72%);
+}
+
+.holder .section {
+  background-color: white;
+  position: relative;
+  height: 400px;
+  -webkit-transition: 2s linear;
+  transition: 2s linear;
+}
+
+.holder .section .to-left {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  height: 75px;
+  width: 75px;
+  z-index: 1;
+  opacity: 0.30;
+}
+
+.holder .section .to-left i {
+  color: green;
+}
+
+.holder .section .to-left:hover {
+  background-color: #43a896;
+  opacity: 0.7;
+  border: none;
+  color: white;
+}
+
+.holder .section .to-left:hover i {
+  color: white;
+}
+
+.holder .section .to-right {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  height: 75px;
+  width: 75px;
+  z-index: 1;
+  opacity: 0.30;
+}
+
+.holder .section .to-right i {
+  color: green;
+}
+
+.holder .section .to-right:hover {
+  background-color: #43a896;
+  opacity: 0.7;
+  border: none;
+  color: white;
+}
+
+.holder .section .to-right:hover i {
+  color: white;
+}
+
+.holder .section .box {
+  padding: 3px;
+}
+
+.holder .section .box img {
+  width: 100%;
+  height: 50%;
+}
+
+.holder .section .box .save-news {
+  background-color: #05a805;
+  padding: 3px;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.weather-container {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 300px;
+  padding: 2px;
+  border: 1px solid;
+  position: fixed;
+  top: 100px;
+  background-image: url("./תמונות/08ad05b973ad507b90ca3a5d36592aa0.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.weather-container p {
+  font-family: cursive;
+}
+
+@media screen and (max-width: 415px) {
+  body {
+    background-color: black;
+  }
+  body header {
+    background-image: url(./תמונות/logo.png);
+  }
+  body header h1 {
+    display: none;
+  }
+  body .weather-container {
+    position: relative;
+    color: black;
+  }
+}
+/*# sourceMappingURL=style.css.map */

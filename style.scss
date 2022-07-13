@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    // color:white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+div {
+    box-shadow: 0 0 20px rgb(67, 168, 150);
+    border-radius: 5px;
+
+}
+
+// נווט/סרגל כלים
+nav {
+    div {
+        background-color: rgb(67, 168, 150);
+
+        box-shadow: none;
+
+        img {
+            width: 200px;
+        }
+    }
+
+}
+
+// דף ראשי
+header {
+    background-image: url('./תמונות/./news-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+
+    h1 {
+        font-size: 5rem;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+}
+
+// תוכן של האתר
+.holder {
+    background: radial-gradient(circle, rgba(72, 183, 164, 1) 0%, rgba(165, 216, 207, 1) 72%);
+
+    .section {
+        background-color: white;
+        position: relative;
+        height: 400px;
+        transition: 2s linear;
+// מעטפת של כל כתבה
+// לחצנים
+.to-left {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    height: 75px;
+    width: 75px;
+    z-index: 1;
+    opacity: 0.30;
+
+    i {
+        color: green;
+    }
+
+    &:hover {
+        background-color: rgb(67, 168, 150);
+        opacity: 0.7;
+        border: none;
+        color: white;
+
+        i {
+            color: white;
+        }
+    }
+}
+
+.to-right {
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    height: 75px;
+    width: 75px;
+    z-index: 1;
+    opacity: 0.30;
+
+    i {
+        color: green;
+    }
+
+    &:hover {
+        background-color: rgb(67, 168, 150);
+        opacity: 0.7;
+        border: none;
+        color: white;
+        
+        i {
+            color: white;
+        }
+    }
+}
+        .box {
+            padding: 3px;
+
+            // height: 250px;
+            img {
+                width: 100%;
+                height: 50%;
+            }
+            // כפתור שמירה
+            .save-news {
+                background-color: rgb(5, 168, 5);
+                padding: 3px;
+                border: 1px solid white;
+                border-radius: 50%;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
+// מזג אוויר
+.weather-container {
+    // width: 15%;
+    box-shadow: none;
+    height: 300px;
+    padding: 2px;
+    border: 1px solid;
+    position: fixed;
+    top: 100px;
+    // right: 0;
+    background-image: url("./תמונות/08ad05b973ad507b90ca3a5d36592aa0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p {
+        font-family: cursive;
+    }
+
+}
+
+
+// תצוגת נייד
+@media screen and(max-width:415px) {
+
+    
+    body {
+        background-color: black;
+        
+        header {
+            background-image: url(./תמונות/logo.png);
+            
+            
+            h1 {
+                display: none;
+                
+            }
+        }
+        .weather-container {
+            position: relative;
+            color: black;
+        }
+    }
+    
+}
